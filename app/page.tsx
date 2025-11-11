@@ -107,7 +107,7 @@ export default function Home() {
       </section>
 
       {/* Event Details Section */}
-      <section className="py-20 px-4" style={{ background: "linear-gradient(to bottom, #f5f0fa 0%, #e8dff5 100%)" }}>
+      <section className="py-20 px-4 bg-white/50">
         <div className="max-w-6xl mx-auto">
           <FloralDivider />
 
@@ -116,7 +116,7 @@ export default function Home() {
             style={{
               fontFamily: "var(--font-playfair)",
               fontSize: "2.5rem",
-              color: "#5a3d6e",
+              color: "#4a4a4a",
             }}
           >
             Event Details
@@ -132,8 +132,7 @@ export default function Home() {
               locationAddress="Nammikal, Enubamla, Telangana"
               mapUrl="https://maps.app.goo.gl/kVRARJCbSHXvBGVXA"
               invitedBy={[
-                "Smt & Sri Gogula Vimala - Somi Reddy",
-                "Sri Narra Saidi Reddy - Jyothi"
+                "Smt & Sri Gogula Vimala - Somi Reddy"
               ]}
             />
 

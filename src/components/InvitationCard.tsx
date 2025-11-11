@@ -31,7 +31,7 @@ export function InvitationCard({
           viewBox="0 0 80 30"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="text-[#8b6fa8]"
+          className="text-[#d4af37]"
         >
           <path
             d="M30 15 Q35 10 40 15 Q45 20 50 15"
@@ -61,7 +61,7 @@ export function InvitationCard({
       </div>
 
       {/* Main Card */}
-      <div className="relative max-w-md mx-auto bg-white rounded-2xl shadow-[0_8px_30px_rgba(139,111,168,0.15)] p-8">
+      <div className="relative max-w-md mx-auto bg-white rounded-2xl shadow-[0_8px_30px_rgba(212,175,55,0.15)] p-8">
         {/* Title */}
         <h3
           className="text-center mb-6"
@@ -69,20 +69,20 @@ export function InvitationCard({
             fontFamily: "var(--font-playfair)",
             fontSize: "2rem",
             fontWeight: 600,
-            color: "#5a3d6e",
+            color: "#4a4a4a",
           }}
         >
           {title}
         </h3>
 
         {/* Date and Time Box */}
-        <div className="bg-[#e8dff5] rounded-xl p-4 mb-6">
+        <div className="bg-[#f5ebe0] rounded-xl p-4 mb-6">
           <p
             className="text-center mb-2"
             style={{
               fontFamily: "var(--font-playfair)",
               fontSize: "1.25rem",
-              color: "#5a3d6e",
+              color: "#4a4a4a",
             }}
           >
             {date}
@@ -92,7 +92,7 @@ export function InvitationCard({
             style={{
               fontFamily: "var(--font-inter)",
               fontSize: "0.875rem",
-              color: "#5a3d6e",
+              color: "#4a4a4a",
             }}
           >
             {time}
@@ -106,7 +106,7 @@ export function InvitationCard({
             style={{
               fontFamily: "var(--font-playfair)",
               fontSize: "0.875rem",
-              color: "#5a3d6e",
+              color: "#4a4a4a",
             }}
           >
             Invited by
@@ -119,7 +119,7 @@ export function InvitationCard({
                   style={{
                     fontFamily: "var(--font-playfair)",
                     fontSize: "1rem",
-                    color: "#5a3d6e",
+                    color: "#4a4a4a",
                   }}
                 >
                   {name}
@@ -130,7 +130,7 @@ export function InvitationCard({
                     style={{
                       fontFamily: "var(--font-playfair)",
                       fontSize: "0.75rem",
-                      color: "#5a3d6e",
+                      color: "#4a4a4a",
                       fontStyle: "italic",
                     }}
                   >
@@ -148,14 +148,14 @@ export function InvitationCard({
             href={mapUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-[#5a3d6e] hover:text-[#8b6fa8] transition-colors"
+            className="inline-flex items-center gap-2 text-[#4a4a4a] hover:text-[#d4af37] transition-colors"
             style={{
               fontFamily: "var(--font-inter)",
               fontSize: "0.875rem",
             }}
           >
             <MapPin className="w-4 h-4" />
-            <span className="border-b border-dotted border-[#5a3d6e]">
+            <span className="border-b border-dotted border-[#4a4a4a]">
               {location}
             </span>
           </a>
@@ -164,7 +164,7 @@ export function InvitationCard({
             style={{
               fontFamily: "var(--font-inter)",
               fontSize: "0.875rem",
-              color: "#5a3d6e",
+              color: "#8a8a8a",
             }}
           >
             {locationAddress}
@@ -180,7 +180,7 @@ export function InvitationCard({
           viewBox="0 0 60 25"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="text-[#8b6fa8]"
+          className="text-[#d4af37]"
         >
           <path
             d="M25 12.5 Q30 8 35 12.5"

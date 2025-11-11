@@ -1,9 +1,9 @@
 "use client";
 
 import { FloralDivider } from "@/src/components/FloralDivider";
-import { Calendar, MapPin, Heart, Users } from "lucide-react";
+import { InvitationCard } from "@/src/components/InvitationCard";
+import { MapPin, Heart } from "lucide-react";
 import Image from "next/image";
-import couplePhoto from "@/src/assets/5a2ee5363aae7469df975b2223de5fe64abfedcb.png";
 
 export default function Home() {
   return (
@@ -70,7 +70,7 @@ export default function Home() {
           <div className="max-w-2xl mx-auto mb-12 transition-all duration-700 hover:scale-[1.02]">
             <div className="relative rounded-lg overflow-hidden shadow-[0_8px_30px_rgba(0,0,0,0.12)]">
               <Image
-                src={couplePhoto}
+                src="/sharath.JPG"
                 alt="Sharath and Meghana"
                 className="w-full h-auto aspect-[4/3] object-cover"
                 width={800}
@@ -107,123 +107,49 @@ export default function Home() {
       </section>
 
       {/* Event Details Section */}
-      <section className="py-20 px-4 bg-white/50">
-        <div className="max-w-4xl mx-auto">
+      <section className="py-20 px-4" style={{ background: "linear-gradient(to bottom, #f5f0fa 0%, #e8dff5 100%)" }}>
+        <div className="max-w-6xl mx-auto">
           <FloralDivider />
 
           <h2
-            className="text-center mb-12"
+            className="text-center mb-16"
             style={{
               fontFamily: "var(--font-playfair)",
               fontSize: "2.5rem",
-              color: "#4a4a4a",
+              color: "#5a3d6e",
             }}
           >
             Event Details
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
             {/* Groom's Ceremony */}
-            <div className="text-center p-6 rounded-lg bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] transition-all duration-300 hover:shadow-[0_8px_30px_rgba(0,0,0,0.12)] hover:-translate-y-1">
-              <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-[#ffe5ec] flex items-center justify-center">
-                <Users className="w-8 h-8 text-[#d4af37]" />
-              </div>
-              <h3
-                className="mb-2"
-                style={{
-                  fontFamily: "var(--font-playfair)",
-                  fontSize: "1.25rem",
-                  color: "#4a4a4a",
-                }}
-              >
-                Groom's Ceremony
-              </h3>
-              <p className="text-[#8a8a8a] mb-1" style={{ fontFamily: "var(--font-inter)" }}>
-                Tuesday, November 25th, 2025
-              </p>
-              <p className="text-[#8a8a8a] mb-3" style={{ fontFamily: "var(--font-inter)" }}>
-                12:00 PM
-              </p>
-              <p className="text-[#8a8a8a] mb-1" style={{ fontFamily: "var(--font-inter)", fontSize: "0.875rem" }}>
-                V N REDDY GARDENS
-              </p>
-              <p className="text-[#8a8a8a] mb-2" style={{ fontFamily: "var(--font-inter)", fontSize: "0.875rem" }}>
-                Nammikal, Enubamla, Telangana
-              </p>
-              <a
-                href="https://maps.app.goo.gl/kVRARJCbSHXvBGVXA"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[#d4af37] hover:text-[#c19a2e] transition-colors inline-flex items-center gap-1"
-                style={{ fontFamily: "var(--font-inter)", fontSize: "0.875rem" }}
-              >
-                View on Map
-                <svg
-                  className="w-3 h-3"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                  />
-                </svg>
-              </a>
-            </div>
+            <InvitationCard
+              title="Groom's Ceremony"
+              date="November 25, 2025"
+              time="12:00 PM"
+              location="V N REDDY GARDENS"
+              locationAddress="Nammikal, Enubamla, Telangana"
+              mapUrl="https://maps.app.goo.gl/kVRARJCbSHXvBGVXA"
+              invitedBy={[
+                "Smt & Sri Gogula Vimala - Somi Reddy",
+                "Sri Narra Saidi Reddy - Jyothi"
+              ]}
+            />
 
             {/* Wedding Ceremony */}
-            <div className="text-center p-6 rounded-lg bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)] transition-all duration-300 hover:shadow-[0_8px_30px_rgba(0,0,0,0.12)] hover:-translate-y-1">
-              <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-[#e5dff7] flex items-center justify-center">
-                <Heart className="w-8 h-8 text-[#d4af37] fill-[#d4af37]" />
-              </div>
-              <h3
-                className="mb-2"
-                style={{
-                  fontFamily: "var(--font-playfair)",
-                  fontSize: "1.25rem",
-                  color: "#4a4a4a",
-                }}
-              >
-                Wedding Ceremony
-              </h3>
-              <p className="text-[#8a8a8a] mb-1" style={{ fontFamily: "var(--font-inter)" }}>
-                Wednesday, November 26th, 2025
-              </p>
-              <p className="text-[#8a8a8a] mb-3" style={{ fontFamily: "var(--font-inter)" }}>
-                10:46 AM
-              </p>
-              <p className="text-[#8a8a8a] mb-1" style={{ fontFamily: "var(--font-inter)" }}>
-                Degababu Function Hall
-              </p>
-              <p className="text-[#8a8a8a] mb-2" style={{ fontFamily: "var(--font-inter)" }}>
-                Kodad
-              </p>
-              <a
-                href="https://maps.app.goo.gl/Ajm1ooxmd9QsroBB6"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[#d4af37] hover:text-[#c19a2e] transition-colors inline-flex items-center gap-1"
-                style={{ fontFamily: "var(--font-inter)", fontSize: "0.875rem" }}
-              >
-                View on Map
-                <svg
-                  className="w-3 h-3"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                  />
-                </svg>
-              </a>
-            </div>
+            <InvitationCard
+              title="Wedding Ceremony"
+              date="November 26, 2025"
+              time="10:46 AM"
+              location="Degababu Function Hall"
+              locationAddress="Kodad"
+              mapUrl="https://maps.app.goo.gl/Ajm1ooxmd9QsroBB6"
+              invitedBy={[
+                "Smt & Sri Gogula Vimala - Somi Reddy",
+                "Sri Narra Saidi Reddy - Jyothi"
+              ]}
+            />
           </div>
 
           <div className="mt-12 p-8 rounded-lg bg-[#f5ebe0]/50 border border-[#d4af37]/10">

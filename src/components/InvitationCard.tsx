@@ -61,7 +61,7 @@ export function InvitationCard({
       </div>
 
       {/* Main Card */}
-      <div className="relative max-w-md mx-auto bg-white rounded-2xl shadow-[0_8px_30px_rgba(212,175,55,0.15)] p-8 flex-1 flex flex-col">
+      <div className="relative max-w-md mx-auto bg-white rounded-2xl shadow-[0_8px_30px_rgba(212,175,55,0.15)] p-8 flex-1 flex flex-col transition-all duration-300 hover:shadow-[0_12px_40px_rgba(212,175,55,0.25)] hover:-translate-y-1 scroll-fade-in">
         {/* Title */}
         <h3
           className="text-center mb-6 flex-shrink-0"
@@ -76,7 +76,7 @@ export function InvitationCard({
         </h3>
 
         {/* Date and Time Box */}
-        <div className="bg-[#f5ebe0] rounded-xl p-4 mb-6 flex-shrink-0">
+        <div className="bg-[#f5ebe0] rounded-xl p-4 mb-6 flex-shrink-0 transition-all duration-300 hover:bg-[#f0e5d5]">
           <p
             className="text-center mb-2"
             style={{
@@ -148,13 +148,13 @@ export function InvitationCard({
             href={mapUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-[#4a4a4a] hover:text-[#d4af37] transition-colors"
+            className="group inline-flex items-center gap-2 text-[#4a4a4a] hover:text-[#d4af37] transition-all duration-300"
             style={{
               fontFamily: "var(--font-inter)",
               fontSize: "0.875rem",
             }}
           >
-            <MapPin className="w-4 h-4" />
+            <MapPin className="w-4 h-4 transition-transform duration-300 group-hover:scale-110" />
             <span className="border-b border-dotted border-[#4a4a4a]">
               {location}
             </span>

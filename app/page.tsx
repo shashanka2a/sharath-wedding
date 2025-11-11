@@ -2,6 +2,7 @@
 
 import { FloralDivider } from "@/src/components/FloralDivider";
 import { InvitationCard } from "@/src/components/InvitationCard";
+import { ScrollAnimation } from "@/src/components/ScrollAnimation";
 import { MapPin, Heart } from "lucide-react";
 import Image from "next/image";
 
@@ -44,12 +45,12 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center px-4 py-16">
         <div className="max-w-6xl w-full">
-          <div className="text-center mb-12 animate-fadeIn">
-            <p className="text-[#d4af37] tracking-[0.3em] uppercase mb-4" style={{ fontFamily: "var(--font-inter)" }}>
+          <ScrollAnimation className="text-center mb-12 scroll-fade-in">
+            <p className="text-[#d4af37] tracking-[0.3em] uppercase mb-4 transition-opacity duration-300 hover:opacity-80" style={{ fontFamily: "var(--font-inter)" }}>
               You are invited to celebrate wedding of
             </p>
             <h1
-              className="mb-2 transition-all duration-700"
+              className="mb-2 transition-all duration-700 hover:scale-105"
               style={{
                 fontFamily: "var(--font-playfair)",
                 fontSize: "4rem",
@@ -60,14 +61,14 @@ export default function Home() {
               Sharath & Meghana
             </h1>
             <div className="flex items-center justify-center gap-3 mb-8">
-              <div className="h-px bg-[#d4af37] w-16" />
-              <Heart className="w-5 h-5 text-[#d4af37] fill-[#d4af37]" />
-              <div className="h-px bg-[#d4af37] w-16" />
+              <div className="h-px bg-[#d4af37] w-16 transition-all duration-300 hover:w-20" />
+              <Heart className="w-5 h-5 text-[#d4af37] fill-[#d4af37] transition-transform duration-300 hover:scale-125" />
+              <div className="h-px bg-[#d4af37] w-16 transition-all duration-300 hover:w-20" />
             </div>
-          </div>
+          </ScrollAnimation>
 
           {/* Photo */}
-          <div className="max-w-2xl mx-auto mb-12 transition-all duration-700 hover:scale-[1.02]">
+          <ScrollAnimation className="max-w-2xl mx-auto mb-12 transition-all duration-700 hover:scale-[1.02] scroll-fade-in-delay">
             <div className="relative rounded-lg overflow-hidden shadow-[0_8px_30px_rgba(0,0,0,0.12)]">
               <Image
                 src="/sharath.JPG"
@@ -78,9 +79,9 @@ export default function Home() {
                 priority
               />
               {/* Gold border overlay */}
-              <div className="absolute inset-0 border-8 border-[#d4af37]/20 pointer-events-none" />
+              <div className="absolute inset-0 border-8 border-[#d4af37]/20 pointer-events-none transition-all duration-300 hover:border-[#d4af37]/30" />
             </div>
-          </div>
+          </ScrollAnimation>
 
           <div className="text-center">
             <p
@@ -108,9 +109,12 @@ export default function Home() {
 
       {/* Event Details Section */}
       <section className="py-20 px-4 bg-white/50">
-        <div className="max-w-6xl mx-auto">
-          <FloralDivider />
+          <div className="max-w-6xl mx-auto">
+          <ScrollAnimation className="scroll-fade-in">
+            <FloralDivider />
+          </ScrollAnimation>
 
+          <ScrollAnimation className="scroll-fade-in-delay">
           <h2
             className="text-center mb-16"
             style={{
@@ -121,6 +125,7 @@ export default function Home() {
           >
             Event Details
           </h2>
+          </ScrollAnimation>
 
           <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto items-stretch">
             {/* Groom's Ceremony */}
@@ -150,28 +155,13 @@ export default function Home() {
               ]}
             />
           </div>
-
-          <div className="mt-12 p-8 rounded-lg bg-[#f5ebe0]/50 border border-[#d4af37]/10">
-            <p
-              className="text-center text-[#4a4a4a] mb-3"
-              style={{
-                fontFamily: "var(--font-playfair)",
-                fontSize: "1.125rem",
-              }}
-            >
-              Dress Code
-            </p>
-            <p className="text-center text-[#8a8a8a]" style={{ fontFamily: "var(--font-inter)" }}>
-              Formal Attire • Traditional
-            </p>
-          </div>
         </div>
       </section>
 
       {/* Footer */}
       <footer className="py-12 px-4 bg-white/50">
-        <div className="max-w-4xl mx-auto text-center">
-          <Heart className="w-8 h-8 mx-auto mb-4 text-[#d4af37] fill-[#d4af37]" />
+        <ScrollAnimation className="max-w-4xl mx-auto text-center scroll-fade-in">
+          <Heart className="w-8 h-8 mx-auto mb-4 text-[#d4af37] fill-[#d4af37] transition-transform duration-300 hover:scale-110" />
           <p
             className="mb-2"
             style={{
@@ -197,7 +187,7 @@ export default function Home() {
               Knotify
             </a>
           </p>
-        </div>
+        </ScrollAnimation>
       </footer>
     </div>
   );

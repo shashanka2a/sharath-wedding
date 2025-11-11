@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fonts are loaded via next/font in layout.tsx */
+
+@layer base {
+  :root {
+    --font-size: 16px;
+    --background: #fdfbf9;
+    --foreground: #4a4a4a;
+    --card: #ffffff;
+    --card-foreground: #4a4a4a;
+    --popover: #ffffff;
+    --popover-foreground: #1a1a1a;
+    --primary: #d4af37;
+    --primary-foreground: #ffffff;
+    --secondary: #f5ebe0;
+    --secondary-foreground: #4a4a4a;
+    --muted: #f5ebe0;
+    --muted-foreground: #8a8a8a;
+    --accent: #ffe5ec;
+    --accent-foreground: #4a4a4a;
+    --destructive: #d4183d;
+    --destructive-foreground: #ffffff;
+    --border: rgba(212, 175, 55, 0.15);
+    --input: transparent;
+    --input-background: #ffffff;
+    --switch-background: #e0d5c7;
+    --font-weight-medium: 500;
+    --font-weight-normal: 400;
+    --ring: #d4af37;
+    --radius: 0.625rem;
+    
+    /* Custom wedding theme colors */
+    --pastel-pink: #ffe5ec;
+    --pastel-lavender: #e5dff7;
+    --pastel-peach: #ffd7ba;
+    --gold: #d4af37;
+    --gold-light: #f0e5c5;
+    --cream: #fdfbf9;
+  }
+
+  .dark {
+    --background: #1a1a1a;
+    --foreground: #fafafa;
+    --card: #1a1a1a;
+    --card-foreground: #fafafa;
+    --popover: #1a1a1a;
+    --popover-foreground: #fafafa;
+    --primary: #fafafa;
+    --primary-foreground: #1a1a1a;
+    --secondary: #2a2a2a;
+    --secondary-foreground: #fafafa;
+    --muted: #2a2a2a;
+    --muted-foreground: #a0a0a0;
+    --accent: #2a2a2a;
+    --accent-foreground: #fafafa;
+    --destructive: #d4183d;
+    --destructive-foreground: #ffffff;
+    --border: #2a2a2a;
+    --input: #2a2a2a;
+    --ring: #404040;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-inter), 'Inter', sans-serif;
+  }
+}
+
+html {
+  font-size: var(--font-size);
+}

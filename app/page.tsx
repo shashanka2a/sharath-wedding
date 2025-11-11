@@ -122,7 +122,7 @@ export default function Home() {
             Event Details
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto items-stretch">
             {/* Groom's Ceremony */}
             <InvitationCard
               title="Groom's Ceremony"

@@ -22,9 +22,9 @@ export function InvitationCard({
   invitedBy,
 }: InvitationCardProps) {
   return (
-    <div className="relative py-12 px-4">
+    <div className="relative py-12 px-4 h-full flex flex-col">
       {/* Decorative top ornament */}
-      <div className="flex justify-center mb-6">
+      <div className="flex justify-center mb-6 flex-shrink-0">
         <svg
           width="80"
           height="30"
@@ -61,10 +61,10 @@ export function InvitationCard({
       </div>
 
       {/* Main Card */}
-      <div className="relative max-w-md mx-auto bg-white rounded-2xl shadow-[0_8px_30px_rgba(212,175,55,0.15)] p-8">
+      <div className="relative max-w-md mx-auto bg-white rounded-2xl shadow-[0_8px_30px_rgba(212,175,55,0.15)] p-8 flex-1 flex flex-col">
         {/* Title */}
         <h3
-          className="text-center mb-6"
+          className="text-center mb-6 flex-shrink-0"
           style={{
             fontFamily: "var(--font-playfair)",
             fontSize: "2rem",
@@ -76,7 +76,7 @@ export function InvitationCard({
         </h3>
 
         {/* Date and Time Box */}
-        <div className="bg-[#f5ebe0] rounded-xl p-4 mb-6">
+        <div className="bg-[#f5ebe0] rounded-xl p-4 mb-6 flex-shrink-0">
           <p
             className="text-center mb-2"
             style={{
@@ -100,9 +100,9 @@ export function InvitationCard({
         </div>
 
         {/* Invited By Section */}
-        <div className="mb-6">
+        <div className="mb-6 flex-1 flex flex-col justify-center min-h-[100px]">
           <p
-            className="text-center mb-4 italic"
+            className="text-center mb-4 italic flex-shrink-0"
             style={{
               fontFamily: "var(--font-playfair)",
               fontSize: "0.875rem",
@@ -111,7 +111,7 @@ export function InvitationCard({
           >
             Invited by
           </p>
-          <div className="space-y-2">
+          <div className="space-y-2 flex-1 flex flex-col justify-center">
             {invitedBy.map((name, index) => (
               <div key={index}>
                 <p
@@ -143,7 +143,7 @@ export function InvitationCard({
         </div>
 
         {/* Location */}
-        <div className="text-center">
+        <div className="text-center flex-shrink-0">
           <a
             href={mapUrl}
             target="_blank"
@@ -173,7 +173,7 @@ export function InvitationCard({
       </div>
 
       {/* Decorative bottom ornament */}
-      <div className="flex justify-center mt-6">
+      <div className="flex justify-center mt-6 flex-shrink-0">
         <svg
           width="60"
           height="25"

@@ -97,11 +97,11 @@ export default function Home() {
               href="https://maps.app.goo.gl/Ajm1ooxmd9QsroBB6"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#8a8a8a] hover:text-[#d4af37] transition-colors inline-flex items-center gap-1"
+              className="text-[#8a8a8a] hover:text-[#d4af37] transition-all duration-300 inline-flex items-center gap-1 group"
               style={{ fontFamily: "var(--font-inter)" }}
             >
               Degababu Function Hall, Kodad
-              <MapPin className="w-4 h-4" />
+              <MapPin className="w-4 h-4 transition-transform duration-300 group-hover:scale-110" />
             </a>
           </div>
         </div>

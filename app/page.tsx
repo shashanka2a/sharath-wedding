@@ -74,9 +74,13 @@ export default function Home() {
                 src="/sharath.JPG"
                 alt="Sharath and Meghana"
                 className="w-full h-auto aspect-[4/3] object-cover"
-                width={800}
-                height={600}
+                width={1200}
+                height={900}
                 priority
+                quality={85}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
+                placeholder="blur"
+                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
               />
               {/* Gold border overlay */}
               <div className="absolute inset-0 border-8 border-[#d4af37]/20 pointer-events-none transition-all duration-300 hover:border-[#d4af37]/30" />

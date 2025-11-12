@@ -82,37 +82,6 @@ export default function Home() {
               <div className="absolute inset-0 border-8 border-[#d4af37]/20 pointer-events-none transition-all duration-300 hover:border-[#d4af37]/30" />
             </div>
           </ScrollAnimation>
-
-          <div className="text-center">
-            <p
-              className="text-[#4a4a4a] mb-2"
-              style={{
-                fontFamily: "var(--font-playfair)",
-                fontSize: "1.5rem",
-              }}
-            >
-              Wednesday, November 26th, 2025
-            </p>
-            <p
-              className="text-[#4a4a4a] mb-4"
-              style={{
-                fontFamily: "var(--font-playfair)",
-                fontSize: "1.25rem",
-              }}
-            >
-              10:46 AM
-            </p>
-            <a
-              href="https://maps.app.goo.gl/Ajm1ooxmd9QsroBB6"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[#8a8a8a] hover:text-[#d4af37] transition-all duration-300 inline-flex items-center gap-1 group"
-              style={{ fontFamily: "var(--font-inter)" }}
-            >
-              Degababu Function Hall, Kodad
-              <MapPin className="w-4 h-4 transition-transform duration-300 group-hover:scale-110" />
-            </a>
-          </div>
         </div>
       </section>
 
@@ -144,7 +113,7 @@ export default function Home() {
               time="12:00 PM"
               location="V N REDDY GARDENS"
               locationAddress="Nammikal, Enubamla, Telangana"
-              mapUrl="https://maps.app.goo.gl/kVRARJCbSHXvBGVXA"
+              mapUrl="https://maps.app.goo.gl/A7A66BzgRoSShgQQ9?g_st=aw"
               invitedBy={[
                 "Smt & Sri Gogula Vimala - Somi Reddy"
               ]}

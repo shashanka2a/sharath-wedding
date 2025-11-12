@@ -93,6 +93,15 @@ export default function Home() {
             >
               Wednesday, November 26th, 2025
             </p>
+            <p
+              className="text-[#4a4a4a] mb-4"
+              style={{
+                fontFamily: "var(--font-playfair)",
+                fontSize: "1.25rem",
+              }}
+            >
+              10:46 AM
+            </p>
             <a
               href="https://maps.app.goo.gl/Ajm1ooxmd9QsroBB6"
               target="_blank"
